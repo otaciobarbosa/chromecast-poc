@@ -1,0 +1,21 @@
+<ion-navbar *navbar>
+  <ion-title>
+    Home
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+    <button (click)="attemptInitialize()" block>Connect to Chromecast</button>
+
+    <br />
+    <button (click)="sendNavigateMessage('Splash')" block secondary>Splash Page</button>
+    <button (click)="sendNavigateMessage('Home')" block secondary>Home Page</button>
+    <button (click)="sendNavigateMessage('Page1')" block secondary>Page 1</button>
+    <button (click)="sendNavigateMessage('Fonts')" block secondary>Fonts Page 1</button>
+    <button (click)="sendNavigateMessage('Fonts2')" block secondary>Fonts Page 2</button>
+    <button (click)="sendNavigateMessage('Fonts3')" block secondary>Fonts Page 3</button>
+    <button (click)="sendNavigateMessage('Fonts4')" block secondary>Fonts Page 4</button>
+    <button (click)="sendNavigateMessage('Grid')" block secondary>Bootstrap Grid</button>
+    <button (click)="sendNavigateMessage('Glyphicons')" block secondary>Glyphicons</button>
+    <!--<button (click)="sendVersionMessage()" block secondary>Receiver Version</button>-->
+</ion-content>
